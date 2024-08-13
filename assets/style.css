@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* utilities */
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.fill {
+    background: #eee;
+    border: 3px solid #ccc;
+}
+
+/* Layouts */
+#app {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  padding-block: 30px;
+  position: fixed;
+}
+
+#screen {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.turn-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 2px dashed #555;
+  width: 265px;
+  height: 30px;
+  padding: 5px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #111;
+  border-radius: 100%;
+}
+
+#computer,
+#player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice-screen {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#battle {
+    background-color: #000;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 3px solid #bbb;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+#result-text {
+    margin-block: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 0.5rem;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#choices {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.choices-wrap {
+    border: 2px solid #aaa;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.choices-wrap button {
+    background-color: #333;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.choices-wrap button:hover {
+    background: darkred;
+}
+
+.choices-wrap button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}

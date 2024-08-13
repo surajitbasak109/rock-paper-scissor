@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Rock, Paper and Scissor</h1>
+      <div id="screen">
+        <div id="computer">
+          <div class="column">
+            <div class="frame">
+              <img
+                src="./assets/images/computer.png"
+                alt="Computer"
+                width="80"
+                height="80"
+              />
+            </div>
+            <div class="turn-indicators"></div>
+          </div>
+          <div class="choice-screen">
+            <img
+            class="hidden"
+              src="./assets/images/rock.png"
+              alt="Rock"
+              width="80"
+              height="80"
+            />
+          </div>
+        </div>
+        <div id="battle">
+          <img
+            src="./assets/images/battle.png"
+            alt="Battle"
+            width="40"
+            height="40"
+          />
+        </div>
+        <div id="player">
+          <div class="column">
+            <div class="turn-indicators"></div>
+            <div class="frame">
+              <img
+                src="./assets/images/player.png"
+                alt="Player"
+                width="80"
+                height="80"
+              />
+            </div>
+          </div>
+          <div class="choice-screen">
+            <img
+              class="hidden"
+              src="./assets/images/paper.png"
+              alt="Rock"
+              width="80"
+              height="80"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="result-text" class="hidden"></div>
+      <div id="choices">
+        <div class="choices-wrap">
+          <button id="rock">
+            <img
+              src="./assets/images/rock.png"
+              alt="Rock"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button id="paper">
+            <img
+              src="./assets/images/paper.png"
+              alt="Paper"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button id="scissor">
+            <img
+              src="./assets/images/scissor.png"
+              alt="Scissor"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
