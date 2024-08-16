@@ -8,7 +8,8 @@
   </head>
   <body>
     <div id="app">
-      <h1>Rock, Paper and Scissor</h1>
+      <h1 class="game-title">Rock, Paper and Scissor</h1>
+      <div id="turns"></div>
       <div id="screen">
         <div id="computer">
           <div class="column">
@@ -19,18 +20,11 @@
                 width="80"
                 height="80"
               />
+              <div class="level-text">Level: <span id="computer-level-text">0</span></div>
             </div>
             <div class="turn-indicators"></div>
           </div>
-          <div class="choice-screen">
-            <img
-            class="hidden"
-              src="./assets/images/rock.png"
-              alt="Rock"
-              width="80"
-              height="80"
-            />
-          </div>
+          
         </div>
         <div id="battle">
           <img
@@ -50,22 +44,34 @@
                 width="80"
                 height="80"
               />
+              <div class="level-text">Level: <span id="player-level-text">0</span></div>
             </div>
           </div>
-          <div class="choice-screen">
-            <img
-              class="hidden"
-              src="./assets/images/paper.png"
-              alt="Rock"
-              width="80"
-              height="80"
-            />
-          </div>
+        </div>
+      </div>
+      <div id="choice-screen-section">
+        <div id="computer-choice" class="choice-screen">
+          <img
+            class="hidden"
+            src="./assets/images/rock.png"
+            alt="Rock"
+            width="80"
+            height="80"
+          />
+        </div>
+        <div id="player-choice" class="choice-screen">
+          <img
+            class="hidden"
+            src="./assets/images/paper.png"
+            alt="Rock"
+            width="80"
+            height="80"
+          />
         </div>
       </div>
       <div id="result-text" class="hidden"></div>
       <div id="choices">
-        <div class="choices-wrap">
+        <section id="choice-buttons-section" class="choices-wrap">
           <button id="rock">
             <img
               src="./assets/images/rock.png"
@@ -90,7 +96,11 @@
               height="40"
             />
           </button>
-        </div>
+        </section>
+        <section id="play-next-section" class="play-next hidden">
+          <button id="next-level-button">Next level</button>
+          <button id="start-over-button">Start over</button>
+        </section>
       </div>
     </div>
 
